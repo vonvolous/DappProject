@@ -1,2 +1,2 @@
-# NFT_Marketplace
+# DappProject
 Blockchain study
