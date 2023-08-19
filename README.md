@@ -7,7 +7,7 @@
 
 ### 2. 프론트 - 스마트 컨트랙트
   * 프론트엔드 셋팅(chakra package.json version:1.8.8) ✅
-  * 메인페이지 작성
+  * 메인페이지 작성 ✅
   * 레이아웃 및 my animal card page 작성
   * 판매 승인 상태 체크
   * my animal card 컴포넌트 작성

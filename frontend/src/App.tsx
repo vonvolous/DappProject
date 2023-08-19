@@ -16,26 +16,20 @@ const App: FC = () => {
         });
 
         setAccount(accounts[0]);
-      } else {
-        alert("Install Metamask");
       }
     } catch (error) {
       console.error(error);
     }
-  }
+  };
   
   useEffect(() => {
     getAccount();
-  }, []);
-
-  useEffect(() => {
-    console.log(account);
   }, [account]);
-  
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main account={account}/>} />
       </Routes>
     </BrowserRouter>
   );
