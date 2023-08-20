@@ -1,6 +1,8 @@
 # study note files
 study.txt 
 
+./.deps
+
 # dependencies
 node_modules
 /.pnp
