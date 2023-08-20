@@ -26,6 +26,12 @@ const Layout: FC = ({children}) => {
                             My Animal
                         </Button>
                     </Link>
+                    <Text>&nbsp; &nbsp;</Text>
+                    <Link to="sale-animal">
+                        <Button size="sm" colorScheme="twitter">
+                            Sale Animal
+                        </Button>
+                    </Link>
                 </Box>
             </Flex>
             <Flex 

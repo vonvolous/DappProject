@@ -12,7 +12,7 @@
   * 판매 승인 상태 체크 ✅
   * my animal card 컴포넌트 작성 ✅
   * 리팩토링 ✅
-  * 판매 페이지 및 saleanimalcard 컴포넌트 작성
+  * 판매 페이지 및 saleanimalcard 컴포넌트 작성 ✅
   * 판매자 정보 가져오기 및 구매 기능
 
 ### 3. Extra ✅

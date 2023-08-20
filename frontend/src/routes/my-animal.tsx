@@ -1,10 +1,10 @@
 import React, { FC, useState, useEffect } from "react";
-import { Grid, Box, Button, Text, Flex } from "@chakra-ui/react";
+import { Grid, Button, Text, Flex } from "@chakra-ui/react";
 import { PiCurrencyEthBold } from "react-icons/pi";
 
 import MyAnimalCard, { IMyAnimalCard } from "../components/MyAnimalCard";
 
-import { mintAnimalTokenContract, saleAnimalTokenAddress, saleAnimalTokenContract } from "../contracts";
+import { mintAnimalTokenContract, saleAnimalTokenAddress } from "../contracts";
 
 interface MyAnimalProps {
     account : string;
