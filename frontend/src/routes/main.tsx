@@ -49,10 +49,10 @@ const Main: FC<MainProps> = ({ account }) => {
                 { newAnimalType ? (
                 <AnimalCard animalType={newAnimalType}/>
                 ) : (
-                <Text>Let's mint AnimalCard!!</Text>
+                <Text fontWeight="bold">Let's mint AnimalCard!!</Text>
                 )}
             </Box>
-            <Button mt={4} size="sm" colorScheme='cyan' onClick={onClickMint}>Mint</Button>
+            <Button mt={4} size="sm" colorScheme='twitter' onClick={onClickMint}>Mint</Button>
         </Flex>
     );
 };
