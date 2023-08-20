@@ -49,7 +49,16 @@ const SaleAnimal: FC<SaleAnimalProps> = ({account}) => {
         <>
             <Grid mt={4} templateColumns="repeat(4, 1fr)" gap={8}>
                 {saleAnimalCardArray && saleAnimalCardArray.map((v, i) => {
-                    return <SaleAnimalCard key={i} animalType={v.animalType} animalPrice={v.animalPrice} />;
+                    return (
+                    <SaleAnimalCard
+                     key={i}
+                     animalType={v.animalType} 
+                     animalPrice={v.animalPrice} 
+                     animalTokenId={v.animalTokenId}
+                     account={account}
+                     getOnSaleAnimalTokens={getOnSaleAnimalTokens}
+                    />
+                    );
                 })}
             </Grid>
         </>
