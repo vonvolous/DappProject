@@ -144,6 +144,42 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_animalTokenOwner",
+						"type": "address"
+					}
+				],
+				"name": "getAnimalTokens",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "animalTokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "animalType",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "animalPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MintAnimalToken.AnimalTokenData[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
@@ -275,6 +311,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "saleAnimalToken",
+				"outputs": [
+					{
+						"internalType": "contract SaleAnimalToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -288,6 +337,19 @@
 					}
 				],
 				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_saleAnimalToken",
+						"type": "address"
+					}
+				],
+				"name": "setSaleAnimalToken",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -615,11 +677,19 @@
 			]
 		},
 		"contracts/MintAnimalToken.sol": {
-			"keccak256": "0x7950b5d798834d3c385f7b83ef164572efdfce7e339c6c090523a4d4e31e9abc",
+			"keccak256": "0xbe0419d3da3def02809ed1da9309b67d8aaae649c8f70b6d317ef80ca9f4a514",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://42ca09b50903742b234151188b31be8c209c89dd9c9e953d505404ec02f630e4",
-				"dweb:/ipfs/QmTG8jFaMZnPkYtbZBD7hDzhoTytTSqR8f7S6Mf4RcXw8d"
+				"bzz-raw://e318013e7d23c212a13f26daf2fb8489235c59caf3bf3ad074d785fe00527977",
+				"dweb:/ipfs/QmSRjYMqvbGQGXcHNvmg3ZjhHLnBVudiXAcQjMZdu5qgpu"
+			]
+		},
+		"contracts/SaleAnimalToken.sol": {
+			"keccak256": "0x46e35d6768372fd3f51d0e4f5e708fe7657becaf59ddae0aa0e5f993dc396949",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://132edee69e9e9b0556528ba737d1289aeb64ce192ef1f32c8ba2bc999b5dd29b",
+				"dweb:/ipfs/QmYrbtZnbEXN7bbnF5WeHvtTU8ApDRVuP8KFqPz1LSxfzw"
 			]
 		}
 	},

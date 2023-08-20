@@ -7,7 +7,7 @@ interface AnimalCardProps {
 
 const AnimalCard: FC<AnimalCardProps> = ({animalType}) => {
     return (
-        <Image w={150} h={150} src={`images/${animalType}.png`} alt="AnimalCard" />
+        <Image borderRadius={10} w={150} h={150} src={`images/${animalType}.png`} alt="AnimalCard" />
     )
 };
 

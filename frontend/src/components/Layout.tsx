@@ -5,11 +5,11 @@ import { GiTwoShadows } from "../../node_modules/react-icons/gi";
 
 const Layout: FC = ({children}) => {
     return (
-        <Stack h="100vh">
-            <Flex bg="telegram.200" p={4} justifyContent="space-around" alignItems="center">
+        <Stack h="100vh" ml={20} mr={20} mt={4}>
+            <Flex bg="telegram.100" p={4} justifyContent="space-around" alignItems="center" borderRadius={8}>
                 <Box display="flex" alignItems="center">
-                    <GiTwoShadows color="black"/>
-                    <Text fontWeight="bold">&nbsp; NFT Animals</Text>
+                    <GiTwoShadows color="#191970"/>
+                    <Text fontWeight="bold" color="#191970">&nbsp; NFT Animals</Text>
                 </Box>
                 <Box></Box>
                 <Box></Box>
@@ -33,6 +33,8 @@ const Layout: FC = ({children}) => {
             h="full" 
             justifyContent="center" 
             alignItems="center"
+            borderRadius={8}
+            bgColor="#FAFAFA"
             >
             {children}
             </Flex>

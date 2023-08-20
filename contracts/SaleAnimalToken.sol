@@ -64,4 +64,8 @@ contract SaleAnimalToken {
         // 프론트에서 이 sale array 길이를 받아서 사용함!!
         return onSaleAnimalTokenArray.length;
     }
+
+    function getAnimalTokenPrice(uint256 _animalTokenId) view public returns (uint256) {
+        return animalTokenPrices[_animalTokenId];
+    }
 }
